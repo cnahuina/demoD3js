@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>D3js | Ejemplos </title>
+    <!-- BOOSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <!-- FIN BOOSTRAP -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- LIBRERIA D3 -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <!-- FIN -->
+  
+    <!-- JS -->
+    <script src="js/barChart.js" ></script>
+    <script src="js/inicializar.js" ></script>
+
+    
+    <!-- LLAMANDO A FIREBASE -->
+    
+
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-database.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyAXnw9EOGsJYr8VQcm7MBKUsCymuQwFrUM",
+        authDomain: "pruebad3-896da.firebaseapp.com",
+        databaseURL: "https://pruebad3-896da.firebaseio.com",
+        projectId: "pruebad3-896da",
+        storageBucket: "pruebad3-896da.appspot.com",
+        messagingSenderId: "950598724927"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+    <!-- FIN LLAMADA -->
+    <!-- TUTORIAL https://www.youtube.com/watch?v=4rRRpoxs_zI -->
+</head>
+<body>
+   
+    <div class="container">
+        <div class="row" style="padding-top: 2%">
+            <div class="col-sm-6">
+                <svg id="grafica" width="400" height="300"></svg>
+                  
+            </div>
+            <div class="col-sm-6">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <img src="img/antauro.jpg"  data-nombre-candidato="antauro" class="img-rounded candidato">
+                        <img src="img/keiko.jpg"  data-nombre-candidato="keiko" class="img-rounded candidato">
+                    </div>
+                </div>
+                <div class="row">
+                        <div class="col-sm-12">
+                            <img src="img/julio.jpg" data-nombre-candidato="julio"  class="img-rounded candidato"/>
+                            <img src="img/harold.jpg" data-nombre-candidato="harold" class="img-rounded candidato" />
+                        </div>
+                    </div>
+            </div>
+                
+        </div>
+        
+    </div>
+</body>
+</html>
